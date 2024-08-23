@@ -80,7 +80,367 @@ Details of each dataset:
 
 <h2 id="dict"> Data Dictionary</h2>
 
-Write here .....
+
+**Dataset:** BegInvFINAL12312016
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>InventoryId</strong></td>
+      <td>Unique identifier for each item in the inventory. This field distinguishes between different products or variants of the same product.</td>
+    </tr>
+    <tr>
+      <td><strong>Store</strong></td>
+      <td>Code of the store where the inventory is located. This field is useful for identifying the physical location of the items in stock.</td>
+    </tr>
+    <tr>
+      <td><strong>City</strong></td>
+      <td>City where the corresponding store or warehouse is located. This field allows for geographic analysis and evaluation of how inventory varies by location.</td>
+    </tr>
+    <tr>
+      <td><strong>Brand</strong></td>
+      <td>Brand of the product. This field helps segment the inventory by brand, which can be important for sales analysis, customer preferences, and supplier relationship management.</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Detailed description of the product. This field provides additional information about the item, such as features and specifications, which can be useful for better understanding the inventory.</td>
+    </tr>
+    <tr>
+      <td><strong>Size</strong></td>
+      <td>Size or dimensions of the product. This field may refer to the physical size of the item or its capacity, which is relevant for storage space management and customer preferences.</td>
+    </tr>
+    <tr>
+      <td><strong>onHand</strong></td>
+      <td>Quantity of units available in the inventory. This field is crucial for tracking stock levels and planning replenishment.</td>
+    </tr>
+    <tr>
+      <td><strong>Price</strong></td>
+      <td>Unit price of the product. This field is fundamental for financial analysis and for assessing the value of the inventory.</td>
+    </tr>
+    <tr>
+      <td><strong>startDate</strong></td>
+      <td>The start date of inventory or Initian Inventory for 2016.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**Dataset:** EndInvFINAL12312016
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>InventoryId</strong></td>
+      <td>Unique identifier for each item in the inventory. This field distinguishes between different products or variants of the same product.</td>
+    </tr>
+    <tr>
+      <td><strong>Store</strong></td>
+      <td>Code of the store where the inventory is located. This field is useful for identifying the physical location of the items in stock.</td>
+    </tr>
+    <tr>
+      <td><strong>City</strong></td>
+      <td>City where the corresponding store or warehouse is located. This field allows for geographic analysis and evaluation of how inventory varies by location.</td>
+    </tr>
+    <tr>
+      <td><strong>Brand</strong></td>
+      <td>Brand of the product. This field helps segment the inventory by brand, which can be important for sales analysis, customer preferences, and supplier relationship management.</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Detailed description of the product. This field provides additional information about the item, such as features and specifications, which can be useful for better understanding the inventory.</td>
+    </tr>
+    <tr>
+      <td><strong>Size</strong></td>
+      <td>Size or dimensions of the product. This field may refer to the physical size of the item or its capacity, which is relevant for storage space management and customer preferences.</td>
+    </tr>
+    <tr>
+      <td><strong>onHand</strong></td>
+      <td>Quantity of units available in the inventory. This field is crucial for tracking stock levels and planning replenishment.</td>
+    </tr>
+    <tr>
+      <td><strong>Price</strong></td>
+      <td>Unit price of the product. This field is fundamental for financial analysis and for assessing the value of the inventory.</td>
+    </tr>
+    <tr>
+      <td><strong>endDate</strong></td>
+      <td>The end date of inventory or Final Inventory for 2016.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+**Dataset:** PurchasesFINAL12312016
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>InventoryId</strong></td>
+      <td>Unique identifier for each item in the inventory. This field distinguishes between different products or variants of the same product.</td>
+    </tr>
+    <tr>
+      <td><strong>Store</strong></td>
+      <td>Code of the store where the purchase was made or where the inventory is located. This field helps identify the physical location associated with the purchase.</td>
+    </tr>
+    <tr>
+      <td><strong>Brand</strong></td>
+      <td>Brand of the product. This field helps segment the purchase data by brand, which can be important for supplier management and brand analysis.</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Detailed description of the product. This field provides additional information about the item, such as features and specifications, which can be useful for understanding the nature of the purchase.</td>
+    </tr>
+    <tr>
+      <td><strong>Size</strong></td>
+      <td>Size or dimensions of the product. This field may refer to the physical size of the item or its capacity, which is relevant for storage and inventory management.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorNumber</strong></td>
+      <td>Unique identifier for the vendor or supplier. This field is used to track purchases by vendor.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorName</strong></td>
+      <td>Name of the vendor or supplier. This field helps identify the supplier associated with each purchase.</td>
+    </tr>
+    <tr>
+      <td><strong>PONumber</strong></td>
+      <td>Purchase Order (PO) number associated with the purchase. This field is used to track and manage orders with suppliers.</td>
+    </tr>
+    <tr>
+      <td><strong>PODate</strong></td>
+      <td>Date when the Purchase Order was issued. This field is crucial for understanding the timing of orders and for inventory planning.</td>
+    </tr>
+    <tr>
+      <td><strong>ReceivingDate</strong></td>
+      <td>Date when the goods were received. This field helps track the lead time and manage inventory levels.</td>
+    </tr>
+    <tr>
+      <td><strong>InvoiceDate</strong></td>
+      <td>Date when the invoice was issued by the vendor. This field is used for financial tracking and payment processing.</td>
+    </tr>
+    <tr>
+      <td><strong>PayDate</strong></td>
+      <td>Date when the payment was made to the vendor. This field helps manage cash flow and supplier relationships.</td>
+    </tr>
+    <tr>
+      <td><strong>PurchasePrice</strong></td>
+      <td>Price paid for each unit of the product. This field is essential for cost analysis and financial planning.</td>
+    </tr>
+    <tr>
+      <td><strong>Quantity</strong></td>
+      <td>Number of units purchased. This field helps track the volume of purchases and manage inventory levels.</td>
+    </tr>
+    <tr>
+      <td><strong>Dollars</strong></td>
+      <td>Total cost of the purchase in dollars. This field is crucial for budgeting and financial reporting.</td>
+    </tr>
+    <tr>
+      <td><strong>Classification</strong></td>
+      <td>Category used to classify purchases</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**Dataset:** InvoicePurchases12312016
+
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>VendorNumber</strong></td>
+      <td>Unique identifier for the vendor or supplier. This field is used to track purchases by vendor.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorName</strong></td>
+      <td>Name of the vendor or supplier. This field helps identify the supplier associated with each purchase.</td>
+    </tr>
+    <tr>
+      <td><strong>InvoiceDate</strong></td>
+      <td>Date when the invoice was issued by the vendor. This field is used for financial tracking and payment processing.</td>
+    </tr>
+    <tr>
+      <td><strong>PONumber</strong></td>
+      <td>Purchase Order (PO) number associated with the purchase. This field is used to track and manage orders with suppliers.</td>
+    </tr>
+    <tr>
+      <td><strong>PODate</strong></td>
+      <td>Date when the Purchase Order was issued. This field is crucial for understanding the timing of orders and for inventory planning.</td>
+    </tr>
+    <tr>
+      <td><strong>PayDate</strong></td>
+      <td>Date when the payment was made to the vendor. This field helps manage cash flow and supplier relationships.</td>
+    </tr>
+    <tr>
+      <td><strong>Quantity</strong></td>
+      <td>Number of units purchased. This field helps track the volume of purchases and manage inventory levels.</td>
+    </tr>
+    <tr>
+      <td><strong>Dollars</strong></td>
+      <td>Total cost of the purchase in dollars. This field is crucial for budgeting and financial reporting.</td>
+    </tr>
+    <tr>
+      <td><strong>Freight</strong></td>
+      <td>Cost associated with the transportation of goods. This field is important for calculating the total cost of goods purchased and for financial planning.</td>
+    </tr>
+    <tr>
+      <td><strong>Approval</strong></td>
+      <td>Indicates whether the purchase has been approved.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**Dataset:** SalesFINAL12312016
+
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>InventoryId</strong></td>
+      <td>Unique identifier for each item in the inventory. This field distinguishes between different products or variants of the same product.</td>
+    </tr>
+    <tr>
+      <td><strong>Store</strong></td>
+      <td>Code of the store where the sale took place. This field helps identify the physical location associated with the sale.</td>
+    </tr>
+    <tr>
+      <td><strong>Brand</strong></td>
+      <td>Brand of the product. This field helps segment the sales data by brand, which can be important for market analysis and supplier management.</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Detailed description of the product. This field provides additional information about the item sold, such as features and specifications.</td>
+    </tr>
+    <tr>
+      <td><strong>Size</strong></td>
+      <td>Size or dimensions of the product. This field may refer to the physical size of the item or its capacity, which is relevant for inventory and sales analysis.</td>
+    </tr>
+    <tr>
+      <td><strong>SalesQuantity</strong></td>
+      <td>Number of units sold. This field is crucial for tracking the volume of sales and analyzing product performance.</td>
+    </tr>
+    <tr>
+      <td><strong>SalesDollars</strong></td>
+      <td>Total revenue generated from the sale in dollars. This field is important for financial analysis and performance tracking.</td>
+    </tr>
+    <tr>
+      <td><strong>SalesPrice</strong></td>
+      <td>Price at which each unit was sold. This field helps in understanding pricing strategies and profitability.</td>
+    </tr>
+    <tr>
+      <td><strong>SalesDate</strong></td>
+      <td>Date when the sale occurred. This field is essential for time-series analysis and understanding sales trends.</td>
+    </tr>
+    <tr>
+      <td><strong>Volume</strong></td>
+      <td>Total volume of the product sold, which could be measured in units such as liters or kilograms, depending on the product type.</td>
+    </tr>
+    <tr>
+      <td><strong>Classification</strong></td>
+      <td>Category or type of product, used to classify sales for analysis and reporting purposes.</td>
+    </tr>
+    <tr>
+      <td><strong>ExciseTax</strong></td>
+      <td>Tax levied on the sale of specific goods. This field is used for financial reporting and compliance.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorNo</strong></td>
+      <td>Unique identifier for the vendor or supplier associated with the product. This field helps track sales by vendor.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorName</strong></td>
+      <td>Name of the vendor or supplier associated with the product. This field helps in supplier management and relationship tracking.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**Dataset:** 2017PurchasePricesDec
+
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Brand</strong></td>
+      <td>Brand of the product. This field helps segment the purchase data by brand, which can be important for supplier management and market analysis.</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Detailed description of the product. This field provides additional information about the item purchased, such as features and specifications.</td>
+    </tr>
+    <tr>
+      <td><strong>Price</strong></td>
+      <td>Sales price of the product at the time of purchase. This field is important for pricing analysis and cost management.</td>
+    </tr>
+    <tr>
+      <td><strong>Size</strong></td>
+      <td>Size or dimensions of the product. This field may refer to the physical size of the item or its capacity, relevant for storage and inventory management.</td>
+    </tr>
+    <tr>
+      <td><strong>Volume</strong></td>
+      <td>Total volume of the product, which could be measured in units such as liters or kilograms, depending on the product type.</td>
+    </tr>
+    <tr>
+      <td><strong>Classification</strong></td>
+      <td>Category or type of product, used to classify purchases for analysis and reporting purposes.</td>
+    </tr>
+    <tr>
+      <td><strong>PurchasePrice</strong></td>
+      <td>Price paid for each unit of the product. This field is crucial for cost analysis and financial planning.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorNumber</strong></td>
+      <td>Unique identifier for the vendor or supplier. This field is used to track purchases by vendor.</td>
+    </tr>
+    <tr>
+      <td><strong>VendorName</strong></td>
+      <td>Name of the vendor or supplier. This field helps identify the supplier associated with each purchase.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="roadmap"> Project Roadmap </h2>
